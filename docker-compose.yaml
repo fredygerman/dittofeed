@@ -103,7 +103,7 @@ services:
       - postgres
     environment:
       - DB=postgresql
-      - DB_PORT=5432
+      - DB_PORT=5489
       - POSTGRES_USER=postgres
       - POSTGRES_PWD=password
       - POSTGRES_SEEDS=postgres
@@ -125,7 +125,7 @@ services:
       POSTGRES_DB: dittofeed
       POSTGRES_USER: postgres
     ports:
-      - "5432:5432"
+      - "5489:5489"
     volumes:
       - postgres:/var/lib/postgresql/data
     networks:
